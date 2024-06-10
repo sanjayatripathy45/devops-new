@@ -1,8 +1,8 @@
 FROM alpine:3.19
 
-WORKDIR ./
+WORKDIR /app
 
-COPY ./package*.json ./
+COPY ./package*.json .
 
 RUN npm install
 
